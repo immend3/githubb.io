@@ -113,6 +113,10 @@ article p {
 .bg-light {
   background-color: #f1f8e9; /* 부드러운 녹색 배경 */
 }
+.col-md-4 {
+  border-left: 1px solid #ddd; /* 사이드바와 메인 콘텐츠 분리 */
+  padding-left: 15px; /* 사이드바 안쪽 여백 */
+}
 
 /* 푸터 */
 footer {
