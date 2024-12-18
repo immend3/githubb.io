@@ -9,6 +9,23 @@
     <link rel="stylesheet" href="style.css">
     <button id="themeToggle" style="position:fixed; top:20px; right:20px; padding:10px; background:#333; color:#fff; border:none; border-radius:5px; cursor:pointer;">Toggle Theme</button>
     <h1 id="animatedText" style="font-size:24px; font-weight:bold;"></h1>
+    <h1 id="animatedText" style="font-size:24px; font-weight:bold;"></h1>
+
+  <script>
+    const text = "Welcome to My Blog!";
+    const animatedText = document.getElementById('animatedText');
+    let index = 0;
+  
+    function showText() {
+      if (index < text.length) {
+        animatedText.textContent += text[index];
+        index++;
+        setTimeout(showText, 100); // 100ms 간격
+      }
+    }
+    showText();
+  </script>
+
 
   </head>
   <body>
