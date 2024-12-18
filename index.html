@@ -10,20 +10,6 @@
     <button id="themeToggle" style="position:fixed; top:20px; right:20px; padding:10px; background:#333; color:#fff; border:none; border-radius:5px; cursor:pointer;">Toggle Theme</button>
     <h1 id="animatedText" style="font-size:24px; font-weight:bold;"></h1>
 
-    <script>
-      const text = "Welcome to My Blog!";
-      const animatedText = document.getElementById('animatedText');
-      let index = 0;
-    
-      function showText() {
-        if (index < text.length) {
-          animatedText.textContent += text[index];
-          index++;
-          setTimeout(showText, 100); // 100ms 간격
-        }
-      }
-      showText();
-    </script>
   </head>
   <body>
     <div class="container">
@@ -96,14 +82,8 @@
             <p class="text-muted>『데미안』은 싱클레어의 내면을 중심으로 이야기가 전개되며, 현실의 사건보다는 그의 정신적 여정에 초점을 맞춥니다.
                 상징과 비유: 알, 아브락사스, 두 개의 세계 등 작품 속 상징들은 표현주의 문학의 특징을 잘 보여줍니다.</p>
           </article>
-        </div>
-        <!-- 사이드바 -->
-        <div class="col-md-4">
-            <div class="p-4 mb-3 bg-light rounded">
-              <h4 class="fst-italic">저는요...</h4>
-              <p>책을 좋아하고, 자주 읽고자 합니다! 현재 대학생이고 바쁠 때도 여유가 있을 때도 있습니다. </p>
-            </div>
-          </article>
+          
+              </div>
           
            <div class="col-md-4">
           <div class="p-4 mb-3 bg-light rounded">
